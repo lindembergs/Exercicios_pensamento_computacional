@@ -1,2 +1,1 @@
-# Exercicios_pensamento_computacional
-# Exercicios_pensamento_computacional
+# Atenção! É necessário rodar o projeto em um navegador
