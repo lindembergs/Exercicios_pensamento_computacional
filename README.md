@@ -1,0 +1,2 @@
+# Exercicios_pensamento_computacional
+# Exercicios_pensamento_computacional
