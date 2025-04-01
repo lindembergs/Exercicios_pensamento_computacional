@@ -1,1 +1,1 @@
-# Atenção! É necessário rodar o projeto em um navegador
+# Atenção! É necessário rodar os projetos em um navegador
