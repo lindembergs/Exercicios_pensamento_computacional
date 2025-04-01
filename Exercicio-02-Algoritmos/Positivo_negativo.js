@@ -8,7 +8,7 @@ const numeroConvertido = BigInt(numero);
 const verificaNumeroMaiorOuMenor = (numeroConvertido) => {
   while (numeroConvertido == 0) {
     alert(
-      `O número digitado foi ${numeroConvertido}, por favor, digite um número diferent`
+      `O número digitado foi ${numeroConvertido}, por favor, digite um número diferente`
     );
     numeroConvertido = BigInt(window.prompt("Digite um número diferente de 0"));
   }
