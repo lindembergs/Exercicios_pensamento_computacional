@@ -15,6 +15,17 @@ const aprovarReprovar = () => {
   totalNotas = nota1 + nota2 + nota3;
   media = totalNotas / 3;
   console.log(media.toFixed(2));
+  if (media < 5) {
+    console.log(`Sua média foi: ${media.toFixed(2)}, então você foi reprovado`);
+  }
+  if (media >= 5 && media < 7) {
+    console.log(
+      `Sua média foi: ${media.toFixed(2)}, então você foi para a recuperação`
+    );
+  }
+  if (media >= 7) {
+    console.log(`Sua média foi: ${media.toFixed(2)}, então você foi aprovado`);
+  }
 };
 
 aprovarReprovar();
