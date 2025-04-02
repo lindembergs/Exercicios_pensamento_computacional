@@ -2,8 +2,8 @@
 const prompt = require("prompt-sync")();
 const calcularValorDasParcelas = () => {
   let valorDaCompra, quantidadeDeParcelas, valorDeCadaParcela;
-  valorDaCompra = Number(prompt("Digite o valor da compra"));
-  quantidadeDeParcelas = Number(prompt("Digite a quantidade de parcelas"));
+  valorDaCompra = Number(prompt("Digite o valor da compra "));
+  quantidadeDeParcelas = Number(prompt("Digite a quantidade de parcelas "));
 
   valorDeCadaParcela = valorDaCompra / quantidadeDeParcelas;
   console.log(

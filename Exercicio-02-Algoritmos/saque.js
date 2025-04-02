@@ -1,6 +1,6 @@
 const prompt = require("prompt-sync")();
 function sacarDinheiro() {
-  let valor = parseInt(prompt("Digite o valor do saque:"));
+  let valor = parseInt(prompt("Digite o valor do saque: "));
 
   if (isNaN(valor) || valor <= 0) {
     return "Valor inválido! Tente novamente.";

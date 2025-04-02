@@ -2,7 +2,7 @@
 // adolescente (13-17), adulta (18-59) ou idosa (60+).
 const prompt = require("prompt-sync")();
 const calcularIdade = () => {
-  let idade = Number(prompt("Informe sua idade"));
+  let idade = Number(prompt("Informe sua idade "));
   if (idade <= 12) {
     console.log(`Você possui ${idade} anos então é uma criança`);
   }
