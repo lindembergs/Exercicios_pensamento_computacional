@@ -11,8 +11,8 @@
 const prompt = require("prompt-sync")();
 const calcularIMC = () => {
   let peso, altura, valorIMC;
-  peso = Number(prompt("Digite o seu peso"));
-  altura = Number(prompt("Digite sua altura separado por . ex: 1.72"));
+  peso = Number(prompt("Digite o seu peso "));
+  altura = Number(prompt("Digite sua altura separado por . ex: 1.72 "));
   valorIMC = peso / (altura * altura);
   if (valorIMC < 18.5) {
     console.log(
