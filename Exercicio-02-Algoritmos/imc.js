@@ -8,48 +8,49 @@
 // 30,0 - 34,9	Obesidade grau 1
 // 35,0 - 39,9	Obesidade grau 2 (severa)
 // Maior ou igual a 40	Obesidade grau 3 (mórbida)
+const prompt = require("prompt-sync")();
 const calcularIMC = () => {
   let peso, altura, valorIMC;
-  peso = Number(window.prompt("Digite o seu peso"));
-  altura = Number(window.prompt("Digite sua altura separado por . ex: 1.72"));
+  peso = Number(prompt("Digite o seu peso"));
+  altura = Number(prompt("Digite sua altura separado por . ex: 1.72"));
   valorIMC = peso / (altura * altura);
   if (valorIMC < 18.5) {
-    alert(
+    console.log(
       `Seu IMC é: ${valorIMC.toFixed(
         2
       )}, você faz parte da classificação: < 18,5 e está abaixo do peso `
     );
   }
   if (valorIMC == 18.5 && valorIMC <= 24.9) {
-    alert(
+    console.log(
       `Seu IMC é: ${valorIMC.toFixed(
         2
       )}, você faz parte da classificação: 18,5 - 24,9	Peso normal `
     );
   }
   if (valorIMC >= 25 && valorIMC <= 29.9) {
-    alert(
+    console.log(
       `Seu IMC é: ${valorIMC.toFixed(
         2
       )}, você faz parte da classificação: 25,0 - 29,9	Sobrepeso `
     );
   }
   if (valorIMC >= 30 && valorIMC <= 34.9) {
-    alert(
+    console.log(
       `Seu IMC é: ${valorIMC.toFixed(
         2
       )}, você faz parte da classificação: 30,0 - 34,9	Obesidade grau 1 `
     );
   }
   if (valorIMC >= 35 && valorIMC <= 39.9) {
-    alert(
+    console.log(
       `Seu IMC é: ${valorIMC.toFixed(
         2
       )}, você faz parte da classificação: 35,0 - 39,9	Obesidade grau 2 (severa) `
     );
   }
   if (valorIMC >= 40) {
-    alert(
+    console.log(
       `Seu IMC é: ${valorIMC.toFixed(
         2
       )}, você faz parte da classificação: Maior ou igual a 40	Obesidade grau 3 (mórbida) `
