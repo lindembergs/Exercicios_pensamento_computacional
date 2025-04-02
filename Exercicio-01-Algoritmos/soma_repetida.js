@@ -4,9 +4,9 @@ const prompt = require("prompt-sync")();
 const calcularComSomaRepetida = () => {
   let n1, n2, resultado;
   resultado = 0;
-  n1 = Number(prompt("Digite o primeiro número"));
-  n2 = Number(prompt("Digite o segundo número"));
-  for (let i = 0; i < n2; i++) {
+  n1 = Number(prompt("Digite o primeiro número "));
+  n2 = Number(prompt("Digite o segundo número "));
+  for (let i = 0; i <= n2; i++) {
     resultado += n1;
   }
   console.log(resultado);

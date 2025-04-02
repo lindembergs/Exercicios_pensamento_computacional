@@ -4,7 +4,7 @@ const prompt = require("prompt-sync")();
 const calculaFatorial = () => {
   let numero;
   do {
-    numero = Number(prompt("Digite um número inteiro e positivo"));
+    numero = Number(prompt("Digite um número inteiro e positivo "));
     if (numero == 0 || numero == 1) {
       console.log(`O fatorial de ${numero} é: 1`);
       return;

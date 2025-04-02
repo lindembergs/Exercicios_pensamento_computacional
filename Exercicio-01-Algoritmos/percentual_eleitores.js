@@ -11,11 +11,13 @@ const calcularPercentagemDeVotos = () => {
     percentualNulos,
     percentualValidos;
   quantidadeDeVotosBrancos = Number(
-    prompt("Digite a quantidade de votos brancos")
+    prompt("Digite a quantidade de votos brancos ")
   );
-  quantidadeDeVotosNulos = Number(prompt("Digite a quantidade de votos Nulos"));
+  quantidadeDeVotosNulos = Number(
+    prompt("Digite a quantidade de votos Nulos ")
+  );
   quantidadeDeVotosValidos = Number(
-    prompt("Digite a quantidade de votos Válidos")
+    prompt("Digite a quantidade de votos Válidos ")
   );
   totalDeVotos =
     quantidadeDeVotosBrancos +

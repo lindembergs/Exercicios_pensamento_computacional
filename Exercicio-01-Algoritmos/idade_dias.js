@@ -5,9 +5,9 @@ const prompt = require("prompt-sync")();
 let idadeEmAnos, idadeEmMeses, idadeEmDias;
 const converterIdadeEmDias = () => {
   do {
-    idadeEmAnos = Number(prompt("Digite sua idade em anos"));
-    idadeEmMeses = Number(prompt("Digite sua idade em meses"));
-    idadeEmDias = Number(prompt("Digite sua idade em dias"));
+    idadeEmAnos = Number(prompt("Digite sua idade em anos "));
+    idadeEmMeses = Number(prompt("Digite sua idade em meses "));
+    idadeEmDias = Number(prompt("Digite sua idade em dias "));
     if ((idadeEmAnos == 0, idadeEmMeses == 0, idadeEmDias == 0)) {
       console.log("Você ainda não nasceu?");
     }

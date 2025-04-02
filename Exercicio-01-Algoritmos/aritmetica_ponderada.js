@@ -9,10 +9,10 @@ let peso1 = 3;
 let peso2 = 3;
 let peso3 = 4;
 const calcularAritmeticaPonderada = () => {
-  nota1 = Number(prompt("Digite a primeira nota"));
-  nota2 = Number(prompt("Digite a segunda nota"));
-  nota3 = Number(prompt("Digite a terceira nota"));
-  let option = Number(prompt("Digite 1 para aritmética ou 2 para ponderada"));
+  nota1 = Number(prompt("Digite a primeira nota "));
+  nota2 = Number(prompt("Digite a segunda nota "));
+  nota3 = Number(prompt("Digite a terceira nota "));
+  let option = Number(prompt("Digite 1 para aritmética ou 2 para ponderada "));
   let totalNotas = nota1 + nota2 + nota3;
   switch (option) {
     case 1:

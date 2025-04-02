@@ -15,13 +15,13 @@ const calculaValorComIPI = () => {
     IPI,
     valorTotalSemIPI,
     valorTotalComIPI;
-  codigoPeca1 = Number(prompt("Digite o código da primeira peça"));
-  valorDapeca1 = Number(prompt("Digite o valor da primeira peça"));
-  quantidadeDepecas1 = Number(prompt("Digite a quantidade de peças"));
-  codigoPeca2 = Number(prompt("Digite o código da segunda peça"));
-  valorDapeca2 = Number(prompt("Digite o valor da segunda peça"));
-  quantidadeDepecas2 = Number(prompt("Digite a quantidade de peças"));
-  IPI = Number(prompt("Digite o valor do IPI"));
+  codigoPeca1 = Number(prompt("Digite o código da primeira peça "));
+  valorDapeca1 = Number(prompt("Digite o valor da primeira peça "));
+  quantidadeDepecas1 = Number(prompt("Digite a quantidade de peças "));
+  codigoPeca2 = Number(prompt("Digite o código da segunda peça "));
+  valorDapeca2 = Number(prompt("Digite o valor da segunda peça "));
+  quantidadeDepecas2 = Number(prompt("Digite a quantidade de peças "));
+  IPI = Number(prompt("Digite o valor do IPI "));
   IPI += IPI / 100 + 1;
   valorTotalSemIPI =
     valorDapeca1 * quantidadeDepecas1 + valorDapeca2 * quantidadeDepecas2;
