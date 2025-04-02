@@ -11,27 +11,48 @@ const calculaValorComIPI = () => {
     valorDapeca1,
     valorDapeca2,
     quantidadeDepecas1,
-    quantidadeDepecas2;
-  let aliquota;
+    quantidadeDepecas2,
+    IPI,
+    valorTotalSemIPI,
+    valorTotalComIPI;
   codigoPeca1 = Number(window.prompt("Digite o código da primeira peça"));
   valorDapeca1 = Number(window.prompt("Digite o valor da primeira peça"));
   quantidadeDepecas1 = Number(window.prompt("Digite a quantidade de peças"));
   codigoPeca2 = Number(window.prompt("Digite o código da segunda peça"));
   valorDapeca2 = Number(window.prompt("Digite o valor da segunda peça"));
   quantidadeDepecas2 = Number(window.prompt("Digite a quantidade de peças"));
-  // continuar o código com o IPI
-  const pecas = {
-    peca1: {
-      codigo: codigoPeca1,
-      valor: valorDapeca1,
-      quantidadeDepecas: quantidadeDepecas1,
+  IPI = Number(window.prompt("Digite o valor do IPI"));
+  IPI += IPI / 100 + 1;
+  valorTotalSemIPI =
+    valorDapeca1 * quantidadeDepecas1 + valorDapeca2 * quantidadeDepecas2;
+  valorTotalComIPI = valorTotalSemIPI + IPI;
+  const pecas = [
+    {
+      peca1: {
+        codigo: codigoPeca1,
+        valor: valorDapeca1,
+        quantidadeDepecas: quantidadeDepecas1,
+      },
+      peca2: {
+        codigo: codigoPeca2,
+        valor: valorDapeca2,
+        quantidadeDepecas: quantidadeDepecas2,
+      },
     },
-    peca2: {
-      codigo: codigoPeca2,
-      valor: valorDapeca2,
-      quantidadeDepecas: quantidadeDepecas2,
-    },
-  };
-  console.log(pecas);
+  ];
+  // Os códigos da linha 44 a 52 é funcional, porém desnecessário para o exercício
+  // const divRef = document.querySelector(".caixa");
+
+  // pecas.map((peca) => {
+  //   let tagp = document.createElement("p");
+  //   console.log(peca);
+  //   // tagp.innerText = JSON.stringify(peca, null, 2);
+  //   tagp.innerText = `Código da primeira peça: ${peca.peca1.codigo}, preço da primeira peça: ${peca.peca1.valor}, quantidade da primeira peça: ${peca.peca1.quantidadeDepecas} <br> Código da segunda peça: ${peca.peca1.codigo}, preço da segunda peça: ${peca.peca1.valor}, quantidade da segunda peça: ${peca.peca1.quantidadeDepecas}, `;
+  //   divRef.appendChild(tagp);
+  // });
+
+  alert(
+    `O valor total das peças sem IPI é: ${valorTotalSemIPI}, e o valor total com a adição do IPI é: ${valorTotalComIPI}`
+  );
 };
 calculaValorComIPI();
