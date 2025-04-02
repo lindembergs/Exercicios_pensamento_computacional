@@ -26,21 +26,21 @@ const calculaValorComIPI = () => {
   valorTotalSemIPI =
     valorDapeca1 * quantidadeDepecas1 + valorDapeca2 * quantidadeDepecas2;
   valorTotalComIPI = valorTotalSemIPI + IPI;
-  const pecas = [
-    {
-      peca1: {
-        codigo: codigoPeca1,
-        valor: valorDapeca1,
-        quantidadeDepecas: quantidadeDepecas1,
-      },
-      peca2: {
-        codigo: codigoPeca2,
-        valor: valorDapeca2,
-        quantidadeDepecas: quantidadeDepecas2,
-      },
-    },
-  ];
-  // Os códigos da linha 44 a 52 é funcional, porém desnecessário para o exercício
+  // Os códigos da linha 30 a 52 é funcional, porém desnecessário para o exercício, feito para fins de aprendizado
+  // const pecas = [
+  //   {
+  //     peca1: {
+  //       codigo: codigoPeca1,
+  //       valor: valorDapeca1,
+  //       quantidadeDepecas: quantidadeDepecas1,
+  //     },
+  //     peca2: {
+  //       codigo: codigoPeca2,
+  //       valor: valorDapeca2,
+  //       quantidadeDepecas: quantidadeDepecas2,
+  //     },
+  //   },
+  // ];
   // const divRef = document.querySelector(".caixa");
 
   // pecas.map((peca) => {
