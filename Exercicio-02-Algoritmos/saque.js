@@ -6,7 +6,7 @@ function sacarDinheiro() {
     return "Valor inválido! Tente novamente.";
   }
 
-  let notas = [100, 50, 20, 10, 5];
+  let notas = [100, 50, 20, 10, 5, 2];
   let resultado = "";
   let restante = valor;
 
