@@ -1,23 +1,21 @@
-// 7 - Criar um algoritmo que leia o nome de um produto, a
-// quantidade comprada e o preço unitário. Calcular o total da compra e aplicar um desconto:
-// Acima de R$100,00 → 10% de desconto
-// Senão, preço normal
+// 12 - Criar um algoritmo que leia o nome de um produto e o seu preço.
+// Perguntar se o cliente tem cupom de desconto. Se tiver, aplicar 15% de desconto e mostrar o valor final.
 const prompt = require("prompt-sync")();
 
 const aplicarDesconto = () => {
   let nomeProduto,
-    quantidadeDeProdutos,
     precoUnitario,
     valorTotal,
-    percentDesconto = 10;
+    cupom,
+    percentDesconto = 15;
 
   nomeProduto = prompt("Digite o nome do produto: ");
   precoUnitario = parseFloat(prompt("Digite o preço unitário do produto: "));
-  quantidadeDeProdutos = parseInt(prompt("Digite a quantidade de produtos: "));
-
-  valorTotal = precoUnitario * quantidadeDeProdutos;
-
-  if (valorTotal >= 100) {
+  cupom = prompt(
+    "Possui cupom? digite 1 ou sim para aplicar, caso não possua, digite qualquer outra coisa "
+  );
+  valorTotal = precoUnitario;
+  if (cupom == 1 || cupom == "sim") {
     let desconto = (percentDesconto / 100) * valorTotal;
     valorTotal -= desconto;
     console.log(`Produto: ${nomeProduto}`);
@@ -27,7 +25,7 @@ const aplicarDesconto = () => {
     console.log(
       `Valor total sem desconto: R$ ${valorTotal.toFixed(
         2
-      )}. Comprando acima de R$ 100, você recebe 10% de desconto.`
+      )}. Aplicando um cupom, você recebe 15% de desconto.`
     );
   }
 
