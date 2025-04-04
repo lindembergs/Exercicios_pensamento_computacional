@@ -4,7 +4,7 @@ const prompt = require("prompt-sync")();
 const exibirTotalDeVogais = () => {
   const vogais = ["a", "e", "i", "o", "u"];
   let palavra, palavraSplit;
-  palavra = prompt("Digite uma palavra ").toLocaleLowerCase;
+  palavra = prompt("Digite uma palavra ").toLocaleLowerCase();
   palavraSplit = palavra.split("");
   // console.log(palavraSplit);
   let quantidadeVogais = palavraSplit.filter((letra) => vogais.includes(letra));
