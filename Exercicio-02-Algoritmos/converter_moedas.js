@@ -13,6 +13,6 @@ const converterMoedas = () => {
 
   console.log(`Valor em USD ${valorDolar.toFixed(2)}`);
   console.log(`Valor em euros ${valorEuro.toFixed(2)}`);
-  console.log(`Valor em bitcoins ${valorBitcoin.toFixed(2)}`);
+  console.log(`Valor em bitcoins ${valorBitcoin.toFixed(8)}`);
 };
 converterMoedas();
