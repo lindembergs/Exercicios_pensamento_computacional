@@ -7,9 +7,9 @@ const converterMoedas = () => {
     bitcoin: 835602,
   };
   let valorReais = parseFloat(prompt("Digite o valor em reais "));
-  let valorDolar = valorReais * cotacoes.dolar;
-  let valorEuro = valorReais * cotacoes.euro;
-  let valorBitcoin = valorReais * cotacoes.bitcoin;
+  let valorDolar = valorReais / cotacoes.dolar;
+  let valorEuro = valorReais / cotacoes.euro;
+  let valorBitcoin = valorReais / cotacoes.bitcoin;
 
   console.log(`Valor em USD ${valorDolar.toFixed(2)}`);
   console.log(`Valor em euros ${valorEuro.toFixed(2)}`);

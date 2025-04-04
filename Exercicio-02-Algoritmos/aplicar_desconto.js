@@ -17,7 +17,7 @@ const aplicarDesconto = () => {
 
   valorTotal = precoUnitario * quantidadeDeProdutos;
 
-  if (valorTotal >= 100) {
+  if (valorTotal > 100) {
     let desconto = (percentDesconto / 100) * valorTotal;
     valorTotal -= desconto;
     console.log(`Produto: ${nomeProduto}`);

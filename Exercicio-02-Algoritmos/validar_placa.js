@@ -2,9 +2,9 @@
 // válida segundo o formato: 3 letras seguidas de 4 números (ex: ABC1234).
 const prompt = require("prompt-sync")();
 const validarPlaca = () => {
-  let placa = prompt("Digite a placa ").toUpperCase();
+  let placa = prompt("Digite a placa ");
 
-  const regexPlaca = /^[A-Z]{3}[0-9]{4}$/;
+  const regexPlaca = /^[A-Z]{3}[0-9]{4}$/i;
 
   if (regexPlaca.test(placa)) {
     console.log("Placa válida");

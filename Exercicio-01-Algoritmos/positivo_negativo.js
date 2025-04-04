@@ -2,7 +2,7 @@
 // positivo ou negativo.
 const prompt = require("prompt-sync")();
 const numero = prompt("Digite um número inteiro diferente de 0 ");
-const numeroConvertido = BigInt(numero);
+// const numeroConvertido = BigInt(numero);
 const verificaNumeroMaiorOuMenor = (numeroConvertido) => {
   while (numeroConvertido == 0) {
     console.log(
